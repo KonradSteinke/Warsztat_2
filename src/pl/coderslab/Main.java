@@ -1,9 +1,12 @@
 package pl.coderslab;
 
+import pl.coderslab.Model.User;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("Hello World");
+        User newUser = new User("admin","admin@gmail.com" ,"admin" );
+        System.out.println(newUser.toString());
     }
 }

@@ -11,7 +11,17 @@ public class User {
     public User(String userName, String email, String password) {
         this.userName = userName;
         this.email = email;
-        this.password = password;
+        hashPassword(password);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     public User() {
