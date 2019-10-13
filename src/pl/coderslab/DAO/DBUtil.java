@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBUtil {
     private final static String URL =
-            "jdbc:mysql://localhost:3306/Warsztat_2?useSSL=false&characterEncoding=utf8&serverTimzone=UTC";
+            "jdbc:mysql://localhost:3306/Warsztat_2?useSSL=false&characterEncoding=utf8&serverTimezone=UTC";
     private final static String USER = "root";
     private final static String PASSWORD = "ThinkPadT580";
     public static Connection connect() throws SQLException {
